@@ -1,5 +1,8 @@
+ body{
+     margin: 0;
+     padding: 0;
+ }
 .navbar-layout{
-   
      position: relative;
 }
 .nav-logo{
@@ -38,8 +41,7 @@
     color: white;
     padding: 40px;
     text-align: center;
-    /* background-image: url('../images/download.png'); */
-    overflow: hidden;
+    /* background-image: url('../images/download.png'); */ 
  
 }
 .home-navbar{
@@ -49,5 +51,67 @@
     top: 0;
     text-align: center;
     /* background-image: url('../images/download.png'); */
+
+}
+  /* Our favourite section album card */
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.photo-frame{
+    width: 300px;
+    height: 200px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+  overflow: hidden;
+
+
+}
+.photo img{
+    width: 100%;
+}
+.description{
+   display: none;
+   position: absolute;
+   width: 300px;
+   top:0;
+}
+
+
+
+
+
+
+
+/* Media query for mobile view */
+@media only screen and  (max-width:688px){
+    .navbar-img{
+        width:100%;
+    }
+       
+    .navbar-layout{
+        position: relative;
+   }
+    .home-navbar{
+        /* position: absolute; */
+        
+         /* margin: 30px 10px 0 20px;  */
+        top: 0;
+        /* text-align: center; */
+        
+    }
+    .home-navbar a{
+   
+        text-decoration: none;
+        color: white;
+        /* padding: 10px; */
+        text-align: center;
+       
+     
+    }
+  
 
 }
