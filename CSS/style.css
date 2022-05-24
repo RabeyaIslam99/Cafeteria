@@ -113,59 +113,75 @@
 /* Our tasty menu css start */
 
 *::before,
-*::after{
+/* *::after{
     box-sizing: border-box;
-}
-html{
+} */
+/* html{
     line-height: 1.15;
-}
+} */
 body{
     font-family: 'roboto', sans-serif;
-    color: #454545;
+    color: white;
     font-weight: 400;
-    background: #ffffff;
+    font-size: 20px;
+    /* background: #ffffff; */
+   
 }
 
 .container{
     width: 100%;
-    /* padding-right:10px ;
-    padding-left: 10px; */
+    padding-right:10px ;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
+   
+  
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 80px;
+    /* padding: 50px; */
+   
     /* margin-right: -10px;
     margin-left: -10px; */
 }
 .column{
     position: relative;
     width: 100%;
+    margin: 5px;
     /* padding-right: 2px;
     padding-left: 2px;
     flex: 0 0 100%;
     max-width: 100%; */
 }
+#full-container{
+    background: url(../images/banner-4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    
+}
 .section-title{
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 45px 0 30px 0;
+    /* padding: 5px 0 5px 0; */
+  
 }
-.section-title::after{
+/* .section-title::after{
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     left: 0;
     background: #eeeeee;
-}
+} */
 .effect{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     overflow: hidden;
     width: 100%;
     height: 300px;
@@ -190,11 +206,12 @@ body{
 } */
 .effect .effect-text{
     position: absolute;
-    top: 23px;
-    right: 23px;
-    bottom: 23px;
-    left: 23px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
     display: flex;
+    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -211,26 +228,26 @@ body{
     /* padding: 15px; */
     /* z-index: 1; */
 }
-.effect .effect-text:before,
+/* .effect .effect-text:before,
 .effect .effect-text:after{
     position: absolute;
     display: block;
     width: 100%;
     height: 0;
     content: '';
-}
-.effect .effect-text:before{
+} */
+/* .effect .effect-text:before{
     border-top: 3px solid #ffffff;
     border-right: 3px solid #ffffff;
     left: -100%;
     top: 0;
-}
-.effect .effect-text:after{
+} */
+/* .effect .effect-text:after{
     border-bottom: 3px solid #ffffff;
     border-left: 3px solid #ffffff;
     left: 100%;
     bottom: 0;
-}
+} */
 .effect .effect-text{
     opacity: 1;
 }
