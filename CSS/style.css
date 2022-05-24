@@ -2,57 +2,67 @@
      margin: 0;
      padding: 0;
  }
-.navbar-layout{
-     position: relative;
-}
+
 .nav-logo{
     width: 80px;
     height: 40px;
 }
-.navbar-img{
-    
-    width:100%;
-    height: 450px;
-}
-.nav-underline{
-     color: lightslategray;
+.banner{
+    background-image: url(../images/home-banner-1.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 400px;
+  }
+  .logo{
+    text-align: center;
+  }
+  .nav {
+    height: 50px;
     width: 100%;
-    position: absolute;
-    
-    margin: 150px 200px 0 0; 
-   top: 0;
-   text-align: center;
-    
-   
-}
-.navbar-title {
-    color: rgb(236, 238, 241);
-    width: 100%;
-   font-size: 20px;
-    position: absolute;
-    margin: 250px 200px 0 0; 
-   top: 0;
-   text-align: center;
+    background: rgba(0,0,0,0.0);
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
 
-}
-.home-navbar a{
-   
+  #hidden{
+    color: aqua;
+   padding: 20px;
+  }
+  .nav > .nav-header > .nav-title {
+    display: none;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: white;
-    padding: 40px;
-    text-align: center;
-    /* background-image: url('../images/download.png'); */ 
- 
-}
-.home-navbar{
-    position: absolute;
-    
-     margin: 100px 200px 0 350px; 
-    top: 0;
-    text-align: center;
-    /* background-image: url('../images/download.png'); */
-
-}
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
   /* Our favourite section album card */
 .photo-album{
     display: flex;
@@ -118,13 +128,22 @@
         background-size: cover; 
         background-position: center; 
         height: auto;
+        padding: 200px;
+        margin: 20px;
       
+ }
+ .menu-title{
+     color: white;
+     text-align: center;
+     font-size: 30px;
+     color: rgb(242, 235, 41);
  }
 
  .container{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    gap: 4px;
+    /* gap: 2px; */
+    
     align-items: center;
     justify-items: center;
  }
@@ -138,15 +157,43 @@
     justify-content: center;
 }
 .card-description{
-background-color: aqua;
-text-align: center;
-height: 250px;
-width:250px ;
-display: flex;
-    align-items: center;
-    justify-content: center;
+        background-color: rgba(233, 237, 12, 0.333);
+        border: 1px solid burlywood;
+        text-align: center;
+        height: 250px;
+        width:250px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
 
 
+}
+.card-description h1{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 50px;
+}
+/* Our customer reviews */
+.review-container{
+
+   /* margin: 100px;
+   border-bottom: 2px solid black ;
+   border-width: 6px; */
+   background-image: url(../images/review-back.jpg);
+   background-size: cover; 
+   background-position: center;
+   height: auto;
+   padding: 100px;
+   margin: 20px;
+
+}
+.reviews{
+    text-align: center;
+}
+.reviews h1{
+    color: yellow;
 }
 
 
@@ -157,7 +204,14 @@ display: flex;
     .navbar-img{
         width:100%;
     }
-       
+     .full-container{
+        background-image: url(../images/home-banner.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 0px;
+        margin: 20px;
+     }  
     .navbar-layout{
         position: relative;
    }
@@ -180,10 +234,70 @@ display: flex;
     }
     .container{
         display: grid;
+        gap: 10px;
+        margin-bottom: 30px;
         grid-template-columns: repeat(1 , 1fr);
           justify-content: center;
           align-content: center;
     }
   
-
+    .banner{
+        background-image: url(../images/home-banner-1.jpg);
+        background-size: cover; 
+        background-position: center; 
+        height: 200px;
+        width:100%
+      }
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-header > .nav-title {
+        display:inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+      #hidden{
+       display: none;
+      }
 }
