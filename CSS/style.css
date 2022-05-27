@@ -244,6 +244,8 @@
 
   #map{
     width: 100%;
+    margin: 0%;
+    padding: 0%;
    
   }
   /* Footer */
@@ -258,7 +260,10 @@
   padding-top: 20px;
 }
 
-
+ h5{
+   padding: 0;
+   margin: 0;
+ }
 
 /* Media query for mobile view */
 @media only screen and  (max-width:688px){
