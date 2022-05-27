@@ -8,7 +8,7 @@
     height: 40px;
 }
 .banner{
-    background-image: url(../images/home-banner-1.jpg); 
+    background-image: url(../images/home-banner1.jpg); 
     background-size: cover; 
     background-position: center; 
     height: 400px;
@@ -23,7 +23,7 @@
     position: relative;
   }
   
-  .nav > .nav-header {
+  .nav  .nav-header {
     display: inline;
   }
   
@@ -32,43 +32,64 @@
     color: aqua;
    padding: 20px;
   }
-  .nav > .nav-header > .nav-title {
+  .nav  .nav-header  .nav-title {
     display: none;
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
   }
   
-  .nav > .nav-btn {
+  .nav  .nav-btn {
     display: none;
   }
   
-  .nav > .nav-links {
+  .nav  .nav-links {
     
     text-align: center;
     font-size: 18px;
   }
   
-  .nav > .nav-links > a {
+  .nav  .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
   }
   
-  .nav > .nav-links > a:hover {
+  .nav  .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .nav > #nav-check {
+  .nav  #nav-check {
     display: none;
   }
+  #title{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+  }
+  #small-title{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
   /* Our favourite section album card */
+ .album-title{
+  text-align: center;
+  color: rgb(241, 151, 34);
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 40px;
+ }
 .photo-album{
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+  
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
     
    
 }
@@ -79,8 +100,7 @@
     border-radius: 5px;
     position: relative;
     margin: 10px;
-    /* background: linear-gradient(rgba(0,0,0,0.1),#080808); */
-   /* background-color: black; */
+  
   overflow: hidden;
 
 
@@ -95,7 +115,7 @@
 }
 
 .description{
-   /* display: none; */
+  
    position: absolute;
    margin-top: 148px;
    top: 0;
@@ -106,14 +126,12 @@
 
 .photo-frame .description{
     display: inline;
-    /* display: block; */
-    /* background-color: rgba(13, 12, 12, 0); */
+   
     
     color: white;
     background: linear-gradient(rgba(0,0,0,0.2),#080808);
    
-     /* text-align: center; */
-     /* text-align: inherit; */
+   
      padding: 10px;
      
  }
@@ -124,7 +142,7 @@
 
  .full-container{
     
-        background-image: url(../images/home-banner.jpg); 
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../images/home-banner.jpg); 
         background-size: cover; 
         background-position: center; 
         height: auto;
@@ -136,14 +154,13 @@
      color: white;
      text-align: center;
      font-size: 30px;
-     color: rgb(242, 235, 41);
+     color: rgb(241, 151, 34);
  }
 
  .container{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    /* gap: 2px; */
-    
+  
     align-items: center;
     justify-items: center;
  }
@@ -163,6 +180,7 @@
         height: 250px;
         width:250px ;
         display: flex;
+        
         align-items: center;
         justify-content: center;
         opacity: 1;
@@ -178,10 +196,8 @@
 /* Our customer reviews */
 .review-container{
 
-   /* margin: 100px;
-   border-bottom: 2px solid black ;
-   border-width: 6px; */
-   background-image: url(../images/review-back.jpg);
+ 
+  
    background-size: cover; 
    background-position: center;
    height: auto;
@@ -193,9 +209,54 @@
     text-align: center;
 }
 .reviews h1{
-    color: yellow;
+    color: rgb(241, 151, 34);
 }
 
+
+
+
+/* Last Part start */
+#one{
+  width:320px ; 
+  height: 470px;
+}
+#two{
+  width:458px ; height: 250px;
+}
+#three{
+  width:250px ; height: 250px;
+}
+#four{
+  width:708px ; height: 220px;
+}
+#five{
+  width:320px ; height: 470px;
+}
+.middle{
+  display: flex;
+}
+  .photoGrid{
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3 , 0fr);
+    width: 100%;
+  }
+
+  #map{
+    width: 100%;
+   
+  }
+  /* Footer */
+.footer{
+  background-color: #2D2625;
+  height: 80px;
+  width: 100%;
+}
+.footer-title{
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
 
 
 
@@ -216,11 +277,9 @@
         position: relative;
    }
     .home-navbar{
-        /* position: absolute; */
-        
-         /* margin: 30px 10px 0 20px;  */
+      
         top: 0;
-        /* text-align: center; */
+      
         
     }
     .home-navbar a{
@@ -232,6 +291,9 @@
        
      
     }
+   hr {
+      display: none;
+    }
     .container{
         display: grid;
         gap: 10px;
@@ -242,40 +304,41 @@
     }
   
     .banner{
-        background-image: url(../images/home-banner-1.jpg);
+        background-image: url(../images/home-banner1.jpg);
         background-size: cover; 
         background-position: center; 
-        height: 200px;
+        height: 400px;
         width:100%
+       
       }
-      .nav > .nav-btn {
+      .nav  .nav-btn {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
       }
-      .nav > .nav-btn > label {
+      .nav  .nav-btn  label {
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
       }
-      .nav > .nav-header > .nav-title {
+      .nav  .nav-header  .nav-title {
         display:inline-block;
         font-size: 22px;
         color: #fff;
         padding: 10px 10px 10px 10px;
       }
-      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
         background-color: rgba(0, 0, 0, 0.3);
       }
-      .nav > .nav-btn > label > span {
+      .nav  .nav-btn  label  span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
       }
-      .nav > .nav-links {
+      .nav  .nav-links {
         position: absolute;
         display: block;
         width: 100%;
@@ -286,18 +349,84 @@
         top: 50px;
         left: 0px;
       }
-      .nav > .nav-links > a {
+      .nav  .nav-links  a {
         display: block;
         width: 100%;
       }
-      .nav > #nav-check:not(:checked) ~ .nav-links {
+      .nav  #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
       }
-      .nav > #nav-check:checked ~ .nav-links {
+      .nav  #nav-check:checked ~ .nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
       }
       #hidden{
        display: none;
       }
+
+
+
+      /* last part */
+      .photoGrid{
+      
+       
+        margin: 0%;
+        display: grid;
+        grid-template-columns: repeat(1 , 0fr);
+      
+       
+      }
+      
+      #one{
+        width: 100%; 
+        height: auto;
+      }
+      #five{
+        width: 100%; 
+        height: auto;
+      }
+      .middle{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      
+      #two{
+        width: 100%; 
+        height: auto;
+      }
+      #three{
+        width: 100%; 
+        height: auto;
+      }
+      #four{
+        height: 400px;
+        width: 390px;
+     
+      }
+
+
+      #map{
+
+        width: 100%; 
+        height: auto;
+        padding: 0;
+        margin: 0;
+      
+       
+      }
+      .footer{
+        height: auto;
+     
+
+      }
+      .footer-title{
+        color: white;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+     
+
 }
