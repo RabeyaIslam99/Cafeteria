@@ -167,11 +167,14 @@
 /* Our tasty menu css ends */
 
 .card{
-    height: 300px;
-    width: 300px;
+   
+
     display: flex;
-    align-items: center;
+   
     justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
 }
 .card-description{
         background-color: rgba(233, 237, 12, 0.333);
@@ -180,7 +183,6 @@
         height: 250px;
         width:250px ;
         display: flex;
-        
         align-items: center;
         justify-content: center;
         opacity: 1;
@@ -196,8 +198,6 @@
 /* Our customer reviews */
 .review-container{
 
- 
-  
    background-size: cover; 
    background-position: center;
    height: auto;
